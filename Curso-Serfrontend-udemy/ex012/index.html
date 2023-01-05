@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        a[tittle=""]{
+            background-color: red;
+        }
+
+        a[href="https://www.google.com"]{
+            color: white;
+            background-color: yellow;
+        }
+
+        a[href$=".com"]{
+            border-radius: 50px;
+            color: black;
+        }
+
+        img[src="img/01.jpg"]{
+            width: 300px;
+            display: block;
+            margin-top: 20px;
+            padding: 50px;
+        }
+
+        img[tittle="blue"]{
+            background-color: blue;
+        }
+
+        img[tittle="red"]{
+            background-color: red;
+        }
+
+        img[alt="a"]{
+            border-radius: 20px;
+        }
+
+        img[alt="b"]{
+            display: none;
+        }
+
+        img[src$="png"]{
+            border-radius: 50%;
+        }
+
+        h3 ~ p{
+            background-color: green;
+            margin-top: 20px;
+        }
+
+        .box{
+            border: 2px solid black;
+            background-color: purple;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 50px;
+        }
+
+        div img[title="imagem-box"]{
+            padding: 10px;
+            background-color: blue;
+            box-sizing: border-box;
+        }
+
+        h1[title="center"]{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Seletores avançados</h1>
+    <section>
+        <article>
+            <p><a href="https://www.google.com" tittle="">Maça</a></p>
+            <p><a href="https://www.google.com" tittle="">abacaxi</a></p>
+            <p><a href="" tittle="">Cereja</a></p>
+        </article>
+        <article>
+            <img src="img/01.jpg" alt="a" tittle="red">
+            <img src="img/01.jpg" alt="b" tittle="blue">
+            <img src="img/01.jpg" alt="a" tittle="blue">
+        </article>
+        <article>
+            <h3>Ola</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto reiciendis consectetur nesciunt tenetur atque error, quae rem laboriosam aut odio consequatur ipsum at dolorem molestiae alias, harum, praesentium magni. Libero.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum maiores, cumque, voluptate officiis obcaecati aliquid qui sit itaque enim temporibus totam amet, quia molestiae fugiat. Corporis doloremque consequuntur inventore amet!</p>
+        </article>
+        <article>
+            <div class="box">
+                <img src="img/01.jpg" title="imagem-box" alt="">
+            </div>
+            <div class="box">
+                <img src="img/01.jpg" title="imagem-box" alt="">
+            </div>
+        </article>
+        <article>
+            <h1>Hellow Word</h1>
+            <h1 title="center">Hellow Word</h1>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudos</title>
+</head>
+<style>
+    input[type="checkbox"]{
+        width: 20px;
+        height: 20px;
+    }
+
+    input[type="checkbox"]:checked{
+        background-color: greenyellow;
+        color: white;
+        width: 300px;
+        height: 300px;
+    }
+
+    button:disabled{
+        background-color: aqua;
+    }
+
+    p{
+        color: red;
+    }
+
+    p:empty::before{
+        content:"Sem conteúdo";
+    }
+
+    input[type="text"], input[type="email"]{
+        background-color: #ccc;
+    }
+
+    div[tittle="form-focus"]> input:focus{
+        background-color: white;
+    }
+
+    a[href="#"]:hover,:focus{
+        background-color: red;
+    }
+
+    input::placeholder{
+        color: blue;
+    }
+
+    
+</style>
+<body>
+    <h1>Pseudo classes & Pseudo elementos</h1>
+    <form action="" autocomplete="off">
+        <label for="iaccept">Escolha alguma opção</label> <br>
+        <input type="checkbox" name="accept" id="iaccept">Aceito o contrato
+    </form>
+    <button>accept</button>
+    <button disabled>not accept</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi neque est explicabo quae sequi id possimus vel tenetur molestias! Necessitatibus, unde explicabo! Quo nisi quae, corrupti corporis minima deleniti sit?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores consequuntur incidunt veritatis facilis. Corporis assumenda expedita dolor est labore, esse vel nemo vitae veniam commodi, numquam voluptas repellendus beatae?</p>
+
+    <p>paragrafo 1</p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <hr>
+
+    <form action=""  autocomplete="off" >
+        <div tittle="form-focus">
+            <label for="iname">Nome:</label> <br>
+            <input type="text" name="nome" id="inome">
+        </div>
+        <div tittle="form-foc">
+            <label for="iemail">Gemail</label> <br>
+            <input type="email" name="email" id="iemail">
+        </div>
+        <ul>
+            <li><a href="#">Opção</a></li>
+            <li><a href="#">Opção</a></li>
+            <li><a href="#">Opção</a></li>
+            <li><a href="#">Opção</a></li>
+            <li><a href="#">Opção</a></li>
+            <li><a href="#">Opção</a></li>
+            <li><a href="#">Opção</a></li>
+        </ul>
+    </form>
+    <form action="">
+        <input type="text" name="" id="" value="Texto"> <br>
+        <input type="text" name="" id="" placeholder="Texto"> <br>
+        <input type="text" name="" id="" value="Texto" readonly> <br>
+        <input type="text" name="" id="" value="Texto" disabled> <br>
+    </form>
+    <div tabindex="1">div 1</div>
+    <div tabindex="2">div 2</div>
+    <div tabindex="3">div 3</div>
+</body>
+</html>

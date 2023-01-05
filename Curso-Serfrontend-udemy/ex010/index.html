@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        div{
+            margin-top: 5px;
+        }
+
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <div>
+            <label for="iemail">Email</label>
+            <input type="email" name="mail" id="iemail" required>
+        </div>
+        <div>
+            <label for="inum">Numeros de filhos</label>
+            <input type="number" name="num" id="inum" min="1" max="20" required>
+        </div>
+        <div>
+            <label for="idate">Data de nascimento</label>
+            <input type="date" name="date" id="idate" required>
+        </div>
+        <p>
+            Sexo:
+        </p>
+        <div>
+            <label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="imas" value="M" required>
+            <label for="fem">Feminino</label>
+            <input type="radio" name="sexo" id="ifem" value="F" required>
+        </div>
+        <div>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest" >
+                <option value="0">Selecione</option>
+                <option value="Sp">São Paulo</option>
+                <option value="Sp">São Paulo</option>
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="Mg">Minas Gerais</option>
+                <option value="Es">Espirito Santo</option>
+            </select>
+        </div>
+    </fieldset>
+        <div>
+            <legend>Área de interesse</legend>
+            <fieldset>
+                <input type="checkbox" name="dev" value="dev" id="idev"  > <label for="idev">Desenvolvedor</label>  <br>
+                <input type="checkbox" name="dev" value="dev" id="iseg" > <label for="iseg">Bombeiro </label> <br>
+                <input type="checkbox" name="dev" value="dev" id="ipol" > <label for="ipol">Policial</label> <br>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>Mensagens</legend>
+                <div>
+                    <textarea name="text" id="itext" cols="30" rows="5" maxlength="300" minlength="100" placeholder="Digite algo" ></textarea>
+                </div>
+                <div>
+                    <textarea name="text" id="itext" cols="30" rows="5" maxlength="300" minlength="100" placeholder="Digite algo" readonly>Aqui entra o texto do contrato que precisa ser aceito.</textarea>
+                </div>
+                <div>
+                    <label for="iaccept">Li e concordo</label>
+                    <input type="checkbox" name="accept" id="iaccept" >
+                </div>
+            </fieldset>
+</body>
+</html>

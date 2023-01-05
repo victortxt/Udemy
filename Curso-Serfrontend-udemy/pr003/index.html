@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 03</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+        header{
+            background-color: rgb(55, 55, 80);
+            margin: auto;
+            width: 70vw;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            box-sizing: border-box;
+        }
+        
+        nav{
+            margin-left: 150px;
+            padding: 5px;
+        }
+
+        header> nav> ul> li{
+            display: inline-block;
+        }
+
+        header> nav> ul> li> a{
+            color: rgba(255, 255, 255, 0.705);
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        header> nav> ul> li> a:hover{
+            color: white;
+            transition: color .2s linear;
+        }
+
+        header> nav> ul{
+            text-align: right;
+            margin-right: 40px;
+            padding-top: 5px;
+            float: right;
+        }
+
+        #himg{
+            background: url(imagens/topo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            background-position: left center;
+            height: 500px;
+        }
+
+
+        article#text-model{
+            text-align: center;
+            width: 90vw;
+            margin: auto;
+        }
+
+        article#text-model> h2{
+            padding-bottom: 20px;
+        }
+
+        article#text-model> p{
+            padding-bottom: 50px;
+            width: 60vw;
+            margin: auto;
+        }
+
+        section.img-model{
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        article#post{
+            background-color: rgb(0, 61, 82);
+            margin: 20px;
+            box-sizing: border-box;
+            padding: 90px;
+            width: 70vw;
+            margin: auto;
+            margin-top: 50px;
+
+            background-image: url(imagens/bg_detalhe.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+
+        article#post> h1{
+            color: white;
+            font-weight: normal;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-size: 50px;
+        }
+
+        article#post> p{
+            color: white;
+            width: 35vw;
+        }
+
+        section#detalhe{
+            position: absolute;
+            top: 279px;
+            right: 0px;
+        }
+
+        section#detalhe> img{
+            width: 300px;
+        }
+
+        #mark{
+            text-align: center;
+        }
+
+        #mark> h2{
+            margin-top: 80px;
+            font-weight: bold;
+            color: rgb(0, 61, 82);
+            font-size: 30px;
+        }
+
+        #mark> p{
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: rgb(0, 61, 82);
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        iframe{
+            width: 70vw;
+            height: 70vh;
+            border: 1px solid rgba(0, 0, 0, 0.253);
+            margin-bottom: 40px;
+        }
+
+        footer{
+            background-color: rgb(1, 32, 41);
+            padding: 20px;
+            text-align: center;
+            width: 70vw;
+            box-sizing: border-box;
+            margin: auto;
+            color: rgba(255, 255, 255, 0.562);
+            margin-bottom: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imagens/logo.png" alt="">
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="himg">
+            <!--Imagem nas CSS-->
+        </section>
+    </header>
+        <main>
+            <article id="text-model">
+                
+                    <h2>New Fashion Everything Never Enough</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat nisi non ante dictum congue. Cras id odio gravida, posuere velit sed, lacinia mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vehicula, ipsum vel congue cursus, mi neque tincidunt enim, egestas porttitor felis neque et risus. Maecenas fringilla hendrerit enim malesuada laoreet. Aenean quis tortor a odio tempus tincidunt. Vivamus rutrum nulla sed metus congue bibendum. Sed ut aliquam purus. Donec odio mauris, commodo sed dignissim vitae, dapibus eget mauris.
+                    </p>
+                
+                <section class="img-model">
+                    <img src="imagens/modelo1.jpg" alt="">
+                    <h3>Vest Romasa </h3>
+                    <p>Strong & charismatic</p>
+                </section>
+                <section class="img-model">
+                    <img src="imagens/modelo2.jpg" alt="">
+                    <h3>Vest Romasa </h3>
+                    <p>Strong & charismatic</p>
+                </section>
+                <section class="img-model">
+                    <img src="imagens/modelo3.jpg" alt="">
+                    <h3>Vest Romasa </h3>
+                    <p>Strong & charismatic</p>
+                </section>
+            </article>
+            <article id="post">
+                <h1>Everything Never Enough <br> Just Fashion</h1>
+                <p>Praesent placerat eros eget lacus ullamcorper, id dapibus ante vestibulum. Curabitur quis condimentum diam. Duis aliquet erat vel laoreet tincidunt. Pellentesque vitae varius ligula. Phasellus in nibh tempus, gravida justo et, suscipit felis. Cras ornare arcu ac sodales tincidunt. Mauris vehicula erat vel ligula porttitor imperdiet. Curabitur nec magna urna. Sed porta ex ex, at pulvinar nibh aliquet quis. Integer dapibus congue vestibulum. Phasellus bibendum lobortis quam, nec sollicitudin nisl volutpat at.</p>
+                    <!--Imagem nas CSS-->
+            </article>
+            <article id="mark">
+                <h2>CALL ME FOR DESIGNER</h2>
+                <p>012-1234-4567</p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.91647232695!2d-47.46587218521575!3d-23.535506466522808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a6f9d464f45%3A0xc7558b48fd560746!2sCin%C3%A9polis%20Iguatemi%20Esplanada!5e0!3m2!1spt-BR!2sbr!4v1666200663920!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </main>
+        <footer>
+            <p>Copyright © fastfashion.com</p>
+        </footer>
+</body>
+</html>

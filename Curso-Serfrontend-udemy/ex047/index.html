@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alerta()">Mostrar area em alert</button>
+    <button onclick="document()">Mostrar area no documento</button>
+    <div id="output"></div>
+    
+</body>
+<script>
+    var largura = Number(prompt("Digite a largura"));
+    var altura = Number(prompt("Digite a altura"));
+
+    function alerta(){
+        var area = calc(largura, altura);
+        alert(`A area total é igual á ${area}`);
+    }
+
+    function document(){
+        var area = calc(largura, altura);
+        document.querySelector("#output").innerHTML = (`A area total é igual á ${area}`);
+    }
+
+    function calc(l, a){
+        return l * a;
+    }
+</script>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        header{
+            background-color: white;
+        }
+
+        .align-logotipo{
+            text-align: center;
+        }
+
+        .menu-phone{
+            box-shadow: 16px 10px 20px rgba(0, 0, 0, 0.205);
+        }
+
+        .menu-phone> ul> li> a{
+            display: block;
+            background-color: rgb(95, 0, 95);
+            padding-top: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            height: 40px;
+            text-align: center;
+            transition: all .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+        .menu-phone> ul> li> a:hover{
+            color: rgb(153, 4, 153);
+            font-size: 1em;
+            transition: all .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+        button[title="blue-button"]{
+            background-color: rgb(17, 120, 180);
+            border: 2px solid rgb(4, 94, 146);
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            color: white;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        main{
+            width: 80vw;
+            margin: auto;
+        }
+
+        section{
+            width: 100%;
+            margin-bottom: 35px;
+        }
+
+        .align-center{
+            text-align: center;
+        }
+
+        .introduction > h2{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+        .introduction > h2 + p{
+            text-align: center;
+        }
+
+        .config-figs{
+            text-align: center;
+        }
+
+        .config-figs> img{
+            width: 100px;
+        }
+
+        .artg-figs{
+            display: inline-block;
+            width: 100%;
+        }
+
+        .artg-figs h3{
+            color: rgb(97, 0, 97);
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-weight: 600;
+
+        }
+
+        .artg-figs> h3 + p{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .content-designg{
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .content-designg h3{
+            color: rgb(97, 0, 97);
+            margin-bottom: 5px;
+        }
+
+        footer{
+            text-align: center;
+            background-color:rgb(34, 60, 75);
+            width: 100%;
+            color: white;
+        }
+
+        div.contato{
+            display: inline-block;
+        }
+
+        .redes{
+            background-color: rgb(9, 55, 82);
+            padding: 5px 10px;
+            box-sizing: border-box;
+        }
+
+        .info-foot{
+            padding:  5px 10px;
+            box-sizing: border-box;
+        }
+
+        .info-foot h3{
+            margin-bottom: 10px;
+        }
+        .info-foot h3 + p{
+            padding-bottom: 10px;
+        }
+
+        .img-play{
+            text-align: center;
+        }
+
+        
+
+        
+
+        @media screen and (min-width: 580px) and (max-width:1000px){
+            .menu-phone> ul> li{
+                display: inline-block;
+            }
+
+            .menu-phone> ul> li> a{
+                background-color: transparent;
+                color: rgb(95, 0, 95);
+                font-weight: bold;
+                font-size: 0.9em;
+
+            }
+
+            .menu-phone{
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                box-shadow: none;
+            }
+
+            .align-logotipo{
+                text-align: left;
+            }
+
+            .introduction{
+                background-color: rgb(95, 0, 95);
+                width: 100%;
+                position: absolute;
+                left: 0px;
+                top: 70px;
+                margin: auto;
+                box-sizing: border-box;
+                padding: 35px 15px;
+                height: 450px;
+                color: white;
+            }
+
+            .introduction > h2{
+                margin-top: 10px;
+                margin-bottom: 30px;
+                font-size: 1.4em;
+                text-align: center;
+            }
+
+            .introduction > h2 + p{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .content-figs{
+                text-align: center;
+            }
+
+            .artg-figs{
+                display: inline-block;
+                width: 40%;
+            }
+
+            .content-figs{
+                text-align: center;
+            }
+
+            .content-designg{
+                display: inline-block;
+                margin-left: 70px;
+                width: 85%;
+            }
+
+            .img-play> img{
+            width: 150px;
+            margin-top: 20px;
+            }
+            
+            main{
+                margin-top: 480px;
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content-designg{
+                display: inline-block;
+                margin-left: 70px;
+                width: 40%;
+            }
+
+            .artg-figs{
+                display: inline-block;
+                width: 20%;
+            }
+
+            main{
+                margin-top: 1060px;
+                width: 100%;
+            }
+
+            .content-figs{
+                text-align: center;
+            }
+
+            .introduction{
+                background-image: url(images/bg_topo_1600x1374.jpg);
+                width: 100%;
+                height: 1000px;
+                box-sizing: border-box;
+                position: absolute;
+                top: 75px;
+                left: 0px;
+                padding-top: 500px;
+                text-align: center;
+                color: white;
+            }
+
+            .introduction p{
+                width: 600px;
+                margin: auto;
+            }
+
+            .menu-phone{
+                display: none;
+            }
+
+            .introduction > h2{
+                margin-top: 10px;
+                margin-bottom: 30px;
+                font-size: 1.4em;
+                text-align: center;
+            }
+
+            .introduction > h2 + p{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .img-play> img{
+                width: 200px;
+                margin-top: 20px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="align-logotipo">
+            <img src="images/logo_mob.svg" alt="">
+        </div>
+        <nav class="menu-phone">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="introduction">
+            <div class="img-play">
+                <img src="images/icon_play.svg" alt="">
+            </div>
+            <h2>A exciting new venture over the range</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed consequuntur cupiditate provident eligendi quisquam illum repudiandae offi</p>
+            <div class="align-center">
+                <button title="blue-button">Get Satarted</button>
+            </div>
+        </section>
+        <section class="content-figs">
+            <article class="artg-figs">
+                <div class="config-figs">
+                    <img src="images/icon1.jpg" alt="">
+                </div>
+                <h3>Designg Users</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores accusamus iusto ipsa temporibus, amet quis, eligendi eveniet vero, consequatur aspernatur necessitatibus repellendus in? Ipsam voluptatum libero suscipit dolore commodi ducimus!</p>
+            </article>
+            <article class="artg-figs">
+                <div class="config-figs">
+                    <img src="images/icon2.jpg" alt="">
+                </div>
+                <h3>Designg Users</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores accusamus iusto ipsa temporibus, amet quis, eligendi eveniet vero, consequatur aspernatur necessitatibus repellendus in? Ipsam voluptatum libero suscipit dolore commodi ducimus!</p>
+            </article>
+            <article class="artg-figs">
+                <div class="config-figs">
+                    <img src="images/icon3.jpg" alt="">
+                </div>
+                <h3>Designg Users</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores accusamus iusto ipsa temporibus, amet quis, eligendi eveniet vero, consequatur aspernatur necessitatibus repellendus in? Ipsam voluptatum libero suscipit dolore commodi ducimus!</p>
+            </article>
+            <article class="artg-figs">
+                <div class="config-figs">
+                    <img src="images/icon4.jpg" alt="">
+                </div>
+                <h3>Designg Users</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores accusamus iusto ipsa temporibus, amet quis, eligendi eveniet vero, consequatur aspernatur necessitatibus repellendus in? Ipsam voluptatum libero suscipit dolore commodi ducimus!</p>
+            </article>
+        </section>
+        <section class="info">
+            <article class="content-designg">
+                <h3>Designg</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit incidunt inventore repellat sed quam molestiae rerum beatae deleniti quibusdam illum sapiente ratione at doloribus, vitae ipsa perferendis. Rerum, voluptate sapiente.</p>
+            </article>
+            <article class="content-designg">
+                <h3>Designg</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit incidunt inventore repellat sed quam molestiae rerum beatae deleniti quibusdam illum sapiente ratione at doloribus, vitae ipsa perferendis. Rerum, voluptate sapiente.</p>
+            </article>
+            <article class="content-designg">
+                <h3>Designg</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit incidunt inventore repellat sed quam molestiae rerum beatae deleniti quibusdam illum sapiente ratione at doloribus, vitae ipsa perferendis. Rerum, voluptate sapiente.</p>
+                <button title="blue-button">Get Satarted</button>
+            </article>
+            <article class="content-designg">
+                <h3>Designg</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit incidunt inventore repellat sed quam molestiae rerum beatae deleniti quibusdam illum sapiente ratione at doloribus, vitae ipsa perferendis. Rerum, voluptate sapiente.</p>
+                <button title="blue-button">Get Satarted</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="redes">
+            <div class="contato">
+                <img src="images/facebook.png" alt="">
+            </div>
+            <div class="contato">
+                <img src="images/twitter.png" alt="">
+            </div>
+            <div class="contato">
+                <img src="images/googlePlus.png" alt="">
+            </div>
+        </section>
+        <section class="info-foot">
+            <h3>Copyright The Range</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque earum aliquam repudiandae, minus accusamus exercitationem! Ipsa sequi ad repellat, molestias velit facere quae perspiciatis consequuntur fugiat laudantium fuga ratione.</p>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flexbox-cards{
+        border: 2px solid black;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards{
+        margin: 1%;
+        display: block;
+        position: relative;
+    }
+
+    .cards > a:hover::before{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.253);
+        height: 100%;
+        width: 100%;
+        display: block;
+        color: white;
+        position:absolute;
+        top: 0px;
+        left: 0px;
+        transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .cards > a:hover::after{
+        color: white;
+        padding: 5px;
+        border: 2px solid white;
+        border-radius: 5px;
+        content: 'view';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .cards img{
+        display: block;
+    }
+
+</style>
+<body>
+    <section class="flexbox-cards">
+        <div class="cards">
+            <a href="">
+                <img src="imagens/modelo1.jpg" alt="">
+            </a>
+        </div>
+        <div class="cards">
+            <a href="">
+                <img src="imagens/modelo1.jpg" alt="">
+            </a>
+        </div><div class="cards">
+            <a href=""><img src="imagens/modelo1.jpg" alt=""></a>
+        </div>
+    </section>
+</body>
+</html>

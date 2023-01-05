@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lógica de programação</title>
+</head>
+<body>
+    <h1>lógica de programação com JavaScript</h1>
+    <p>Digite um numero de 1 a 0, caso você erre, atualize a página para jogar de novo</p>
+    <script>
+        var n = Number(prompt("Digite 0 ou 1: "))
+        if(n != 1 && n !=  0){
+            alert("Os numeros disponiveis são 0 e 1, apenas")
+        }else{
+            var sortear= parseInt(Math.random() * 2)
+            if(sortear === n){
+                alert("Parabéns você ganhou está rodada!")
+            }else{
+                alert("GAME OVER")
+            }
+
+        }
+
+    </script>
+</body>
+</html>
