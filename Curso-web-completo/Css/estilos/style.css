@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 370px;
+    background-image: url(../imagens/fundo.png);
+    background-position: bottom;
+    background-size: contain;
+}
+
+.container-header{
+    height: 100%;
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+nav{
+    background-color: rgb(173, 34, 34);
+    margin-top: 40px;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav > ul> li{
+    padding: 20px;
+
+}
+
+nav > ul> li:hover{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(191, 47, 47);
+}
+
+nav > ul> li> a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+#col1, #col2, #col3{
+    margin: 15px;
+}
+
+#col1{
+    width: 50%;
+}
+
+#container-container{
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    background-color: rgb(16, 16, 107);
+    box-sizing: border-box;
+    padding: 2px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.list{
+    list-style: none;
+}
+
+.list> li{
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#news > input[type="submit"] {
+    color: white;
+    background-color: rgb(173, 34, 34);
+    border: none;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+#destaque{
+    box-sizing: border-box;
+    padding: 10px;  
+    
+}
+
+#destaque > h3{
+    color: white;
+    background-color: rgb(173, 34, 34);
+    padding: 2px;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    width: 100px;
+}
+
+.content-figures{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.content-figures> img{
+    width: 40%;
+    margin-right: 10px;
+    height: 60px;
+}
+
+.content-figures> section{
+    align-self: flex-start;
+}
+
+h4{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: rgb(0, 208, 255);
+}
+
+div{
+    margin-bottom: 20px;
+}
+
+#ultima-entrevista> h3{
+    background-color: rgb(173, 34, 34);
+    padding-block-end: 2px;
+    color: white;
+    width: 210px;
+    margin: 5px;
+}

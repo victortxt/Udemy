@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: orange;
+    text-align: center;
+    padding: 25px;
+}
+
+header> h1{
+    font-weight: bold;
+}
+
+#logo{
+    color: white;
+}
+
+nav> ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    list-style: none;
+}
+
+nav> ul> li> a{
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav> ul> li> a:hover{
+    background-color: white;
+    color: orange;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+#content{
+    width: 200%;
+    margin-right: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#content h1{
+    color: orange;
+}
+
+#content p{
+    font-size: 0.7em;
+}
+
+#container-posts{
+    width: 100%;
+    height: 370px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+img[src="images/imagem2.jpg"]{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.post{
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 48%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.post> ul{
+    list-style: none;
+}
+
+.text-yellow{
+    color: orange;
+    text-decoration: none4;
+}
+
+.post h1{
+    background-color: rgb(172, 172, 172);
+    box-sizing: border-box;
+    padding: 3px;
+    width: 100%;
+}
+
+footer{
+    background-color: #ccc;
+    padding: 15px;
+    width: 70vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
