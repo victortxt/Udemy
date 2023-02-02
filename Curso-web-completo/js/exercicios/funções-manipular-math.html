@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output">
+
+    </div>
+    <script>
+        let output = document.querySelector("#output");
+        let quest = prompt('digite um numero:')
+        let num1 = Math.ceil(quest)
+        let num2 = Math.floor(quest)
+        let num3 = Math.round(quest)
+        output.innerHTML = (`arrendado para cima ${num1}, arrendondado para baixo ${num2} arredondado normalmente seria ${num3}. vamos sortear um numero`)
+        
+    </script>
+</body>
+</html>

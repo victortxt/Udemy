@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output">
+
+    </div>
+    <script>
+        /*
+        let a = Number(prompt('Digite algo para a letra A'));
+        let b = Number(prompt('Digite algo para a letra B'));
+        const c = b;
+        let output = document.querySelector('#output');
+        b = a
+        a = c
+        output.innerHTML = (`A = ${a} | B = ${b}`);
+        */
+
+        let a = Number(prompt('Digite algo para a letra A'));
+        let b = Number(prompt('Digite algo para a letra B'));
+        let output = document.querySelector('#output');
+        let c = null
+
+        c = b
+        b = a
+        a = c
+
+        output.innerHTML = (`A = ${a} | B = ${b}`);
+    </script>
+</body>
+</html>

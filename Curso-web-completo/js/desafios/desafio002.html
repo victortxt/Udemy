@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output">
+        Fazendo a contagem...
+    </div>
+    <script>
+       
+        let a = Number(prompt('a: '))
+        let i = prompt('+ ou -')
+        let b = Number(prompt('b: '))
+
+        function exemplo(a, b, i){
+            output = document.querySelector('#output');
+            if(i == '+'){
+                output.innerHTML = (`${a} + ${b} = ${a + b}`)
+            }else if(i == '-'){
+                output.innerHTML = (`${a} - ${b} = ${a - b}`)
+            }else{
+                output.innerHTML = (`${i} isto não é indice valido`)
+            }
+        }
+
+        exemplo(a, b, i); 
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onkeydown="down()" type="text"> onkeydown <br>
+    <input onkeypress="press()" type="text"> onkeypress <br>
+    <input onkeyup="up()" type="text"> onkeyup
+    <script>
+        function down(){
+          alert(`você alertou o down`)   
+        }
+
+        function press(){
+          alert(`você alertou o press`)   
+        }
+
+        function up(){
+          alert(`você alertou o up`)   
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="output">
+
+    </div>
+    <script>
+        /*
+        função do tipo retorno
+        
+        function calcArea(largura, altura){
+            let area = largura * altura;
+            return area;
+        }
+        
+        let output = document.querySelector('#output');
+        output.innerHTML = (`A area é igual á ${calcArea(21, 20)} metros quadrados`);
+        */
+       /*
+       função do tipo void
+        function calcArea(largura, comprimento){
+            let area = largura * comprimento;
+            let output = document.querySelector('#output');
+            output.innerHTML = (`A area é igual á ${area} metros quadrados`);
+        }
+
+        calcArea(20, 60);
+        */
+        
+        function calcArea(comprimento, largura){
+            let area = comprimento * largura;
+            return area;   
+        }
+        let largura = prompt('Digite a largura:')
+        let comprimento = prompt('Digite a comprimento')
+        
+        let output = document.querySelector('#output');
+        output.innerHTML = (`A area é igual á ${calcArea(comprimento, largura)}`)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output">
+
+    </div>
+    <script>
+        let output = document.querySelector('#output');
+        let input = Number(prompt('Digite um numero de 1 a 2'));
+        switch(input){
+            case 1:
+                output.innerHTML = (`Numero escolhido foi o ${input}`);
+                break
+            case 2:
+                output.innerHTML = (`Numero escolhido foi o ${input}`);
+                break
+            default:
+                output.innerHTML = (`O numero inserido (${input}) é invalido`);
+                break
+
+        }
+    </script>
+</body>
+</html>
