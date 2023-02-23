@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*
+    #output{
+        background-color: rgb(197, 197, 197);
+        color: black;
+        width: 500px;
+        height: 500px;
+        border: 2px solid rgb(44, 161, 203);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    */
+</style>
+<body>
+    <div id="output">
+    </div>
+    <script>
+        /*
+        output.style.display = 'none'
+        setTimeout (function(){
+            output.style.display = 'block'
+        } ,1000)
+
+        let output = document.querySelector('#output')
+        setTimeout(function(){
+            output.innerHTML = ('Texto')
+        }, 2000);
+        */
+        let i = 10;
+        let output = document.querySelector('#output')
+        let x = setInterval(function(){
+            document.write(i)
+            i--
+            if(i === 0){
+                //clearInterval(x)
+                window.location.reload(i)
+           }
+        }, 1000)
+        
+        
+    </script>
+</body>
+</html>

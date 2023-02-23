@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let quest = prompt('digite alguma fruta')
+        let listaFruta = Array();
+        listaFruta[0] = 'maçã'
+        listaFruta[1] = 'limão'
+        listaFruta[2] = 'melão'
+        listaFruta[3] = 'mamão'
+        if(listaFruta.indexOf(`${quest}`) === -1){
+            alert('nada encontrado')
+        }else{
+            alert(`foi encontrado o(a) ${quest}, e está na posição ${listaFruta.indexOf(quest)}`)
+        }
+    </script>
+</body>
+</html>

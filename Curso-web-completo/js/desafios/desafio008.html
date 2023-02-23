@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="itxt">
+    <button onclick="adicionarItens()">Adicionar</button>
+    <button onclick="OrdenarItens()">Ordenar</button>
+    <button onclick="resetarItem()">Limpar</button>
+    <div>
+        Valores inseridos aqui:
+        <div id="output">
+
+        </div>
+    </div>
+    <script>
+        let input = document.querySelector('#itxt')
+        let obj = Array('Cadeira', 'Impressora', 'Garfo');
+        let output = document.querySelector('#output')
+        
+        
+        function adicionarItens(){
+            if(input.value === ""){
+                alert('Insira algum valor');
+            }else{
+                if(obj.indexOf(input.value) != -1){
+                    alert('Este Objeto já está embutido em nosso servidor')
+                }else{
+                alert('objeto enviado')
+                console.log(obj.push(input.value))
+                output.innerHTML += (`${input.value} <br>`)
+                }
+            }
+
+        }
+
+        function OrdenarItens(){
+            obj.sort()
+            console.log(obj)
+        }
+
+        function resetarItem(){
+            document.querySelector('#itxt').value = ""
+        }
+
+        
+    </script>
+</body>
+</html>

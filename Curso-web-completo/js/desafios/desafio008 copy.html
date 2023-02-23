@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="itxt">
+    <button onclick="enviarDado()">Enviar</button>
+    <button onclick="ordenarDado()">Ordenar dentro do sistema</button>
+    <div>
+        Valores inseridos:
+        <div id="output">
+
+        </div>
+    </div>
+    <script>
+        let input = document.querySelector('#itxt')
+        let output = document.querySelector('#output')
+        let dados = Array()
+        function enviarDado(){
+            if(input.value === ""){
+                alert('Insira algum dado')
+            }else{
+                if(dados.indexOf(input.value) === -1){
+                    output.innerHTML += (`${input.value} <br>`)
+                    console.log(`${dados.push(input.value)}`)
+                }else if(dados.indexOf(input.value) != -1){
+                    alert('Este valor já existe')
+                }
+            }
+        }
+
+        function ordenarDado(){
+            console.log(dados.sort())
+        }
+    </script>
+</body>
+</html>
